@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# Block-level download cache and ad-hoc pulls: regenerable, and large.
+data/.cache/
+data/recent_*.csv
+data/test_*.csv
+
+# The deployed app needs each city's history and trained checkpoint, so those
+# are committed (~12 MB total). Everything else here is reproducible output.
+outputs/*.npz
+outputs/*.log

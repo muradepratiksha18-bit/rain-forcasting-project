@@ -1,0 +1,12 @@
+# Streamlit Community Cloud runs Linux, where the default PyPI `torch` wheel
+# bundles CUDA and weighs ~2.5 GB - far over the deploy size limit. This index
+# serves the CPU-only build (~200 MB), which is all this model needs.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+torch>=2.0
+streamlit>=1.30
+plotly>=5.18
+pandas>=2.0
+numpy>=1.24
+requests>=2.28
+matplotlib>=3.7

@@ -1,0 +1,14 @@
+[theme]
+base = "light"
+primaryColor = "#3b6ea5"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f3f5f8"
+textColor = "#1c2530"
+
+[server]
+headless = true
+# Note: do not set enableCORS = false here. It conflicts with Streamlit's XSRF
+# protection, which silently overrides it back to true and logs a warning.
+
+[browser]
+gatherUsageStats = false
